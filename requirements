@@ -1,2 +1,6 @@
 pytest==6.2.4
 selenium==3.141.0
+webdriver-manager==3.4.2
+webdrivermanager==0.10.0
+pathlib==1.0.1
+pytest-html==3.1.1

@@ -22,5 +22,5 @@ class BasePage:
     def go_to_site(self):
         return self.driver.get(self.base_url)
 
-    def wait(self):
-        return self.driver.implicitly_wait(20)
+    def wait(self, time=5):
+        return self.driver.implicitly_wait(time)

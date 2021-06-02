@@ -1,5 +1,5 @@
 from BaseApp import BasePage
-from Locators.locator_to_second_sc import LocatorSecondScenario
+from pages.MainPageLocators.locator_to_second_sc import LocatorSecondScenario
 from selenium.common.exceptions import TimeoutException
 
 
