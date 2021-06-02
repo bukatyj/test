@@ -4,7 +4,13 @@ from Locators.locator_to_first_sc import LocatorFirstScenario
 
 class FirstHelper(BasePage):
     def click_add_child(self):
-        return self.find_element(LocatorFirstScenario.LOCATOR_CHILD_BUTTON, time=2).click()
+        return self.click_element(LocatorFirstScenario.LOCATOR_CHILD_BUTTON, time=2).click()
+
+    # def check_child_menu(self):
+    #     if self.find_element(LocatorFirstScenario.LOCATOR_CHILD_MENU, time=2).is_displayed:
+    #         pass
+    #     else:
+    #         self.click_add_child()
 
     def num_child(self, count_child):
         num_child = self.find_elements(LocatorFirstScenario.LOCATOR_ADD_CHILD, time=2)
