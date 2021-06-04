@@ -25,4 +25,4 @@ class SecondSuite:
         sleep(5)
         assert booking_main_page.check_room_detail_is_true()
 
-        booking_main_page.close()
+
