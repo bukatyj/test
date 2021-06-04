@@ -24,7 +24,7 @@ def change_browser(request):
     return driver
 
 
-@pytest.fixture()
+@pytest.fixture(scope='session')
 def browser(request):
     driver = change_browser(request)
     yield driver
