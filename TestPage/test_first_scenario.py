@@ -19,4 +19,4 @@ class FirstSuite:
         booking_main_page.num_child(count_child)
         fields = booking_main_page.num_field_child()
         assert fields == count_child
-        booking_main_page.click_clean_child(count_child) 
+        booking_main_page.click_clean_child(count_child)
