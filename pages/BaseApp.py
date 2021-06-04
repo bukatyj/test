@@ -19,6 +19,9 @@ class BasePage:
         return WebDriverWait(self.driver, time).until(EC.element_to_be_clickable(locator),
                                                       message=f'can\'t click element by locator {locator}')
 
+    def close(self):
+        self.driver.close()
+
     def go_to_site(self):
         return self.driver.get(self.base_url)
 
